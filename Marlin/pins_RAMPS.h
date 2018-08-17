@@ -424,8 +424,8 @@
       #endif
 
       #define BTN_ENC           35
-      #define SD_DETECT_PIN     49
-      #define KILL_PIN          41
+      #define SD_DETECT_PIN     -1//49 //rr oled
+      #define KILL_PIN          -1//41 //rr oled
 
       #if ENABLED(BQ_LCD_SMART_CONTROLLER)
         #define LCD_BACKLIGHT_PIN 39
