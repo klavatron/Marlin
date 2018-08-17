@@ -2675,6 +2675,11 @@ void lcd_quick_feedback(const bool clear_buttons) {
       MENU_ITEM(gcode, MSG_AUTO_HOME_Z, PSTR("G28 Z"));
     #endif
 
+    MENU_ITEM(gcode, "Move Z to 0", PSTR("G0 Z0"));       //mpcnc
+    MENU_ITEM(gcode, "Set Z=0", PSTR("Z0"));              //mpcnc
+    MENU_ITEM(gcode, "Set XYZ=0", PSTR("G92 X0 Y0 Z0"));  //mpcnc
+    MENU_ITEM(gcode, "Say Hello", PSTR("M117 Hello sash0k:)")); //mpcnc
+    
     //
     // TMC Z Calibration
     //
