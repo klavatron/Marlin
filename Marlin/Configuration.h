@@ -343,12 +343,12 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 265  //rr
+#define HEATER_0_MAXTEMP 275  //rr  //stupid marlin protection requires unsafe temperature limits; cuts 30 deg
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
 #define HEATER_4_MAXTEMP 275
-#define BED_MAXTEMP 125       //rr
+#define BED_MAXTEMP 135       //rr //stupid marlin protection requires unsafe temperature limits; cuts 30 deg
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -872,12 +872,12 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 185    //rr
-#define Y_BED_SIZE 185    //rr
+#define X_BED_SIZE 200    //rr
+#define Y_BED_SIZE 200    //rr
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-#define Y_MIN_POS -20   //rr
+#define Y_MIN_POS -18   //rr
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
