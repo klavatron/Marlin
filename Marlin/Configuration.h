@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 200, 105 } // AVG 
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 840 } // AVG xy_32 zt8_32 dual_gear_1x3_32
 
 /**
  * Default Max Feed Rate (mm/s)
